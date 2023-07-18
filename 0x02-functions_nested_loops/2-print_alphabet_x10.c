@@ -6,7 +6,7 @@
  * Return: 0
  *
  */
-void print_alphabet_x10(void);
+void print_alphabet_x10(void)
 {
 	char i;
 	char j;
@@ -15,7 +15,7 @@ void print_alphabet_x10(void);
 	{
 		for (i = 'b'; i <= 'k'; i++)
 		{
-			_putchar(i);
+			_putchar('i');
 		}
 		_putchar('\n');
 	}
