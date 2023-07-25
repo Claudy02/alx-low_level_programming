@@ -10,7 +10,7 @@
 int _atoi(char *s)
 {
 	int i;
-	int nb;
+	int np;
 	int c;
 	int d = 1;
 	int num = 0;
@@ -20,9 +20,9 @@ int _atoi(char *s)
 		if (!(s[i] >= '0' && s[i] <= '9') && c > 0)
 			break;
 		if (s[i] == '-')
-			nb--;
+			np--;
 		if (s[i] == '+')
-			nb++;
+			np++;
 		if (s[i] >= '0' && s[i] <= '9')
 		{
 			c++;
@@ -35,7 +35,7 @@ int _atoi(char *s)
 		c--;
 		d *= 10;
 	}
-	if (nb  >= 0)
+	if (np >= 0)
 	{
 		num *= 1;
 	} else
