@@ -1,19 +1,37 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
+
+/**
+ * main - program that generates random passwords for
+ * program 101-crackme
+ *
+ * Return: Always 0 (Success)
+ *
+ */
 
 int main(void)
 {
-	      char valid_chars[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghi
-		      jklmnopqrstuvwxyz0123456789";
-	      char password[PASSWORD_LENGTH + 1]; // +1 for null terminator
-	          int i;
-		  srand(time(NULL)); // Seed random number generator with current time
-		  for (i = 0; i < PASSWORD_LENGTH; i++) {
-			  password[i] = valid_chars[rand() % strlen(valid_chars)];
-		  }
-		  password[PASSWORD_LENGTH] = '\0'; // Add null terminator to end of password string
+	int pass[100];
+	int j, sum, n;
 
-		  _putchar ("%s\n", password);
+	sum = 0;
 
-		  return 0;
+	srand(time(NULL));
+
+	for (j = 0; j < 100; j++)
+	{
+		pass[j] = rand() % 78;
+		sum += (pass[j] + '0');
+		putchar(pass[j] + '0');
+		if ((2772 - sum) - '0' < 78)
+		{
+			n = 2772 - sum - '0';
+			sum += n;
+			putchar(n + '0');
+			break;
+		}
+	}
+
+	return (0);
 }
