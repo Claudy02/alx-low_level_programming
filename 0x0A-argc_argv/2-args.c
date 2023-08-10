@@ -2,13 +2,13 @@
 
 /**
  * main - a program that prints all arguments it receives
- * @args: counts arguments
+ * @argc: counts arguments
  * @argv: argument string
  *
  * Return: 0
  */
 int main(int argc, char **argv)
-{	
+{
 
 	int i;
 
