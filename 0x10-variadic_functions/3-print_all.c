@@ -1,16 +1,15 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include <stdarg.h>
+#include <stdlib.h>
+#include <stdio.h>
 #include "variadic_functions.h"
 
 /**
- * print_c - a function that prints anything
- * @a: a list to give
+ * print_c  - a function that prints anything
+ * @a: list to give
  * Return: always 0
  */
-
 int print_c(va_list a)
-{
+	{
 	printf("%c", va_arg(a, int));
 	return (0);
 }
