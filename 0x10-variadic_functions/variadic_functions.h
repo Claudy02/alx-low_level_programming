@@ -10,6 +10,7 @@ int print_c(va_list a);
 int print_i(va_list a);
 int print_f(va_list a);
 int print_s(va_list a);
+int _putchar(char c);
 /**
  * struct op - struct for 3
  * @c: character to check
