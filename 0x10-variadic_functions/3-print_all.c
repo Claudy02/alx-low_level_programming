@@ -9,7 +9,7 @@
  * Return: always 0
  */
 int print_c(va_list a)
-	{
+{
 	printf("%c", va_arg(a, int));
 	return (0);
 }
