@@ -1,4 +1,7 @@
 #include "lists.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 /**
  * insert_nodeint_at_index - inserts node at index
  * @head: linked list

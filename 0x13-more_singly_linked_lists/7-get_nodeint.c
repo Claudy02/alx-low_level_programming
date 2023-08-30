@@ -1,4 +1,8 @@
 #include "lists.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
 /**
  * get_nodeint_at_index - gets node at index
  * @head: linked list at head
