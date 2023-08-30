@@ -4,9 +4,10 @@
 #include <string.h>
 
 /**
- * pop_listint - pops a node out
- * @head: linked list address
- * Return: head node data
+ * pop_listint - a function that deletes the head node of 
+ * a linked list, and returns the head node’s data (n) 
+ * @head: pointer to the head of the list 
+ * Return: the head node's data (n) or 0 if the linked list is empty
  */
 int pop_listint(listint_t **head)
 {
