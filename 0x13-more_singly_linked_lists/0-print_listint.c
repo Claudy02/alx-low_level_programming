@@ -1,7 +1,7 @@
 #include "lists.h"
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <string.h>
 /**
  * print_listint - a function that prints all the
  * elements in a list
